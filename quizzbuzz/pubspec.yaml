@@ -26,7 +26,8 @@ dev_dependencies:
 flutter_launcher_icons:
   android: "launcher_icon"
   ios: true
-  image_path: "assets/images/QuizzBuzz.png"
+  image_path_andriod: "assets/images/QuizzBuzz.png"
+  andriod: true
   min_sdk_android: 21 # android min sdk min:16, default 21
 
 flutter:
