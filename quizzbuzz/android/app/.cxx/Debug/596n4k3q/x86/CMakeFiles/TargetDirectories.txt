@@ -1,0 +1,2 @@
+/home/pp/PP/quizzbuzz/quizzbuzz/android/app/.cxx/Debug/596n4k3q/x86/CMakeFiles/edit_cache.dir
+/home/pp/PP/quizzbuzz/quizzbuzz/android/app/.cxx/Debug/596n4k3q/x86/CMakeFiles/rebuild_cache.dir

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:quizzbuzz/models/quiz.dart';
+import 'package:quizzbuzz/class/quiz.dart';
 import 'package:quizzbuzz/widgets/colors.dart';
 
 class QuizView extends StatefulWidget {
@@ -59,14 +59,16 @@ Widget quizCard(Quiz quiz) {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(quiz.title,
-                      style: GoogleFonts.comme(
-                          fontSize: 14,
-                          color: AppColors.textPrimary,
-                          fontWeight: FontWeight.bold)),
-                  Text(quiz.status,
-                      style: GoogleFonts.comme(
-                          fontSize: 10, color: AppColors.complete)),
+                  if (quiz.title != null)
+                    Text(quiz.title!,
+                        style: GoogleFonts.comme(
+                            fontSize: 14,
+                            color: AppColors.textPrimary,
+                            fontWeight: FontWeight.bold)),
+                  if (quiz.status != null)
+                    Text(quiz.status!,
+                        style: GoogleFonts.comme(
+                            fontSize: 10, color: AppColors.complete)),
                 ],
               ),
               SizedBox(height: 8.0),
@@ -94,7 +96,7 @@ Widget quizCard(Quiz quiz) {
                             color: AppColors.textPrimary,
                             fontWeight: FontWeight.bold)),
                     TextSpan(
-                      text: "questions",
+                      text: " questions",
                     ),
                   ]))
             ],
